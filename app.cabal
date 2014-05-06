@@ -18,7 +18,9 @@ executable app
                    text,
                    time,
                    wai-extra,
-                   wai-middleware-static                   
+                   wai-middleware-static,
+                   HTTP
+
   hs-source-dirs:  src
   ghc-options:     -Wall -rtsopts
   main-is:         Main.hs
