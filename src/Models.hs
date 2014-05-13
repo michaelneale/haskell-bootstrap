@@ -58,5 +58,5 @@ getJSON :: IO B.ByteString
 getJSON = simpleHttp jsonURL
 --}
 
-
-example1 = encodeUtf8 <$> getJSON
+-- damn it need to convert vetween the bytstring types here (not sure if using applicative on RHS or on result)
+example1 = decodeUtf8 <$> getJSON
