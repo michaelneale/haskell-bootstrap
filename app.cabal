@@ -19,7 +19,9 @@ executable app
                    time,
                    wai-extra,
                    wai-middleware-static,
-                   HTTP
+                   HTTP, 
+                   http-conduit,
+                   bytestring
 
   hs-source-dirs:  src
   ghc-options:     -Wall -rtsopts
