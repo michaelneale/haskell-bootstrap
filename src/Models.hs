@@ -13,11 +13,17 @@ import Data.Aeson
 import Data.Text
 
 import Control.Applicative
-import Control.Monad
+--import Control.Monad
+--import Control.Monad.IO.Class (liftIO)
+
+
 import qualified Data.ByteString.Lazy as B
+
+
+import Data.Text.Lazy.Encoding
+
 import Network.HTTP.Conduit (simpleHttp)
 import GHC.Generics
-import Data.Text.Encoding
 
 
 -- | Type of each JSON entry in record syntax.

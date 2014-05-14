@@ -10,6 +10,7 @@ import Network.Wai.Middleware.RequestLogger
 import Network.Wai.Middleware.Static
 import Web.Scotty
 import Data.Aeson.Types           (ToJSON)
+import Control.Applicative
 
 
 
@@ -25,8 +26,8 @@ main = do
       get "/" $
         redirect "index.html"
       
-      get "/poop" $
-        json $ example1
+      get "/poop" $ 
+        text . example1
 
       notFound $ do
         status notFound404
