@@ -11,7 +11,7 @@ import Network.Wai.Middleware.Static
 import Web.Scotty
 import Data.Aeson.Types           (ToJSON)
 import Control.Applicative
-
+import Control.Monad.IO.Class (liftIO)
 
 
 
@@ -27,7 +27,7 @@ main = do
         redirect "index.html"
       
       get "/poop" $ 
-        text . example1
+        liftIO example1 >>= text
 
       notFound $ do
         status notFound404
