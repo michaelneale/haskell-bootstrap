@@ -29,6 +29,13 @@ main = do
       get "/poop" $ 
         liftIO example1 >>= text
 
+
+      get "/jenkins" $
+        liftIO jenkins >>= text
+
+      get "/jobs" $ 
+        liftIO jenkinsJobAndBack >>= json
+
       notFound $ do
         status notFound404
         html $ "<h1>Not found :(</h1>"
