@@ -26,7 +26,7 @@ main = do
       get "/" $
         redirect "index.html"
       
-      get "/poop" $ 
+      get "/text" $ 
         liftIO example1 >>= text
 
 
