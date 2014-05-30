@@ -1,6 +1,9 @@
 # My ditherings in haskell
 
-A web app. 
+A web app. This is helping me learn scotty and types, IO monad, json/aeson and more in haskell. 
+My aim is to make this my bootstrap for web app microservices. 
+
+First class JSON, and built in healthchecks are the first aims. 
 
 
 To run:
