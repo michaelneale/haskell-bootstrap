@@ -1,5 +1,7 @@
 # My ditherings in haskell
 
+[![Git](https://app.soluble.cloud/api/v1/public/badges/e71147d1-f872-4e33-94c2-196ddd6bc8b6.svg?orgId=451115019187)](https://app.soluble.cloud/repos/details/github.com/michaelneale/haskell-bootstrap?orgId=451115019187)  
+
 A web app. This is helping me learn scotty and types, IO monad, json/aeson and more in haskell. 
 My aim is to make this my bootstrap for web app microservices. 
 
